@@ -8,6 +8,7 @@
       <th class="center">Name</th>
       <th class="center">Cuisine</th>
       <th class="center">Rating</th>
+      <th class="center">Kosher?</th>
       <th class="center">Accepts 10bis?</th>
       <th class="center">Address</th>
       <th class="center">Max Delivery Time</th>
@@ -21,6 +22,7 @@
         <td class="center"><%= restaurant.name %></td>
         <td class="center"><%= restaurant.cuisine %></td>
         <td class="center"><%= restaurant.rating %></td>
+        <td class="center"><%= restaurant.kosher ? 'Yes' : 'No'%></td>
         <td class="center"><%= restaurant.tenbis %></td>
         <td class="center"><%= restaurant.address %></td>
         <td class="center"><%= restaurant.max_time %></td>

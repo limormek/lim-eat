@@ -10,18 +10,20 @@
 # encoding: utf-8
 Restaurant.delete_all
 Restaurant.create!(name: 'Joya',
-                cuisine: 'Italian',
-                rating: 3,
+                   cuisine: 'Italian',
+                   rating: 3,
                    tenbis: true,
-                address: 'Haarbaa 5, Tel Aviv Yaffo',
-                max_time: 25)
+                   address: 'Haarbaa 5, Tel Aviv Yaffo',
+                   max_time: 25,
+                   kosher: false)
 # . . .
 Restaurant.create!(name: 'Salatim',
                    cuisine: 'Salads',
                    rating: 2,
                    tenbis: true,
                    address: 'Haarbaa 10, Tel Aviv Yaffo',
-                   max_time: 20)
+                   max_time: 20,
+                   kosher: true)
 
 # . . .
 
@@ -30,7 +32,8 @@ Restaurant.create!(name: 'Olivery',
                    rating: 2,
                    tenbis: true,
                    address: 'Ibn Gabirol 135, Tel Aviv Yaffo',
-                   max_time: 40)
+                   max_time: 40,
+                   kosher: false)
 
 
 # . . .
@@ -40,7 +43,8 @@ Restaurant.create!(name: 'Montifiore Cafe',
                    rating: 2,
                    tenbis: true,
                    address: 'Ibn Gabirol 95, Tel Aviv Yaffo',
-                   max_time: 20)
+                   max_time: 20,
+                   kosher: false)
 
 # . . .
 
@@ -49,7 +53,8 @@ Restaurant.create!(name: 'Black Azrieli',
                    rating: 2,
                    tenbis: true,
                    address: 'Azrieli 132, Tel Aviv Yaffo',
-                   max_time: 40)
+                   max_time: 40,
+                   kosher: true)
 
 # . . .
 
@@ -58,7 +63,8 @@ Restaurant.create!(name: 'TYO',
                    rating: 3,
                    tenbis: true,
                    address: 'Montifiore 7, Tel Aviv Yaffo',
-                   max_time: 30)
+                   max_time: 30,
+                   kosher: false)
 
 # . . .
 
@@ -67,7 +73,8 @@ Restaurant.create!(name: 'Okinawa',
                    rating: 2,
                    tenbis: false,
                    address: 'Neve Tzedek',
-                   max_time: 25)
+                   max_time: 25,
+                   kosher: true)
 
 # . . .
 
@@ -76,4 +83,5 @@ Restaurant.create!(name: 'Zorik',
                    rating: 2,
                    tenbis: false,
                    address: 'Kikar Milano, Tel Aviv',
-                   max_time: 30)
+                   max_time: 30,
+                   kosher: false)
