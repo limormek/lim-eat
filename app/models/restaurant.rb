@@ -11,6 +11,7 @@
 #  max_time   :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  kosher     :boolean
 #
 
 class Restaurant < ApplicationRecord

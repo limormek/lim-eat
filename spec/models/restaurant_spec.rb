@@ -11,8 +11,8 @@
 #  max_time   :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  kosher     :boolean
 #
-
 
 require 'rails_helper'
 
@@ -27,6 +27,15 @@ RSpec.describe Restaurant, type: :model do
     it { should validate_presence_of(:kosher) }
 
     # it { should is_less_than_or_equal_to :rating, less_than_or_equal_to: 3 }
+  end
+
+  describe :create do
+    let!(:restaurant) {  create(:restaurant) }
+
+    it 'should have one restaurant' do
+      expect(Restaurant.count).to eq(1)
+    end
+
   end
 
 

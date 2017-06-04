@@ -55,6 +55,7 @@ group :development, :test do
   gem 'spring-commands-rspec'
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
+  gem 'faker', :require => nil
 end
 
 group :development do
