@@ -81,8 +81,8 @@
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="360">
+              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -763,7 +763,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496302889272</updated>
-      <workItem from="1496302890555" duration="15242000" />
+      <workItem from="1496302890555" duration="15273000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1496312543259</created>
@@ -793,11 +793,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496559713896</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="installed yarn">
+      <created>1496559900690</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1496559900690</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15242000" />
+    <option name="totallyTimeSpent" value="15273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1281" y="23" width="1280" height="1336" extended-state="0" />
@@ -834,7 +841,8 @@
     <MESSAGE value="Added rspec tests, db migration" />
     <MESSAGE value="Added rspec tests, factory girls, db migration" />
     <MESSAGE value="added react on rails" />
-    <option name="LAST_COMMIT_MESSAGE" value="added react on rails" />
+    <MESSAGE value="installed yarn" />
+    <option name="LAST_COMMIT_MESSAGE" value="installed yarn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1027,8 +1035,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="360">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
           <folding />
         </state>
       </provider>
