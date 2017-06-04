@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: restaurants
+# Table name: Restaurants
 #
 #  id         :integer          not null, primary key
 #  name       :string
