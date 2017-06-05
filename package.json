@@ -5,6 +5,5 @@
   "name": "we-eat",
   "private": true,
   "dependencies": {
-    "react-star-rating-component": "^1.2.4"
   }
 }
