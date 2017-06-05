@@ -3,8 +3,8 @@ import React from 'react';
 
 import StarRatingComponent from 'react-star-rating-component';
 
-import Header from '../components/Header/Header';
-import Restaurant from '../components/RestaurantItem/Restaurant';
+import Header from '../Header/Header';
+import Restaurant from '../RestaurantItem/Restaurant';
 
 const COLOR_PRIMARY = '#00B6FF';
 const COLOR_UNSELECTED = '#E6E6E6';
