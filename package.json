@@ -2,8 +2,9 @@
   "scripts": {
     "postinstall": "cd client && yarn install"
   },
-
   "name": "we-eat",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "react-star-rating-component": "^1.2.4"
+  }
 }
