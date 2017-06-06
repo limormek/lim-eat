@@ -17,8 +17,8 @@ export default class CheckBox extends React.Component {
 
 }
 
-CheckBox.propTypes = {
-    name: PropTypes.string.isRequired,
-    title: PropTypes.string,
-    toggle: PropTypes.func.isRequired
+CheckBox.PropTypes = {
+    name: React.PropTypes.string.isRequired,
+    title: React.PropTypes.string,
+    toggle: React.PropTypes.func.isRequired
 };

@@ -7,6 +7,7 @@ import {COLOR_PRIMARY, COLOR_UNSELECTED} from '../../constants/restaurantsConsta
 import Header from '../Header/Header';
 import Restaurant from '../RestaurantItem/Restaurant';
 import CheckBox from '../Filters/Checkbox'
+import RangeBar from '../Filters/RangeBar'
 
 
 const cuisineTypes = [
@@ -17,7 +18,7 @@ class Restaurants extends React.Component {
 
     constructor() {
         super();
-        this.state = {filterTenbis: false, filterKosher: false}
+        this.state = {filterTenbis: false, filterKosher: false, max_time: 120}
     }
 
     onStarClick(nextValue, prevValue, name) {
@@ -34,6 +35,12 @@ class Restaurants extends React.Component {
         } else if (e.target.name === 'isKosher') {
             this.setState({filterKosher: e.target.checked})
         }
+    }
+
+    onMaxTimeUpdate(e) {
+        this.setState({
+            max_time: e.target.value
+        })
     }
 
     render() {
@@ -68,6 +75,11 @@ class Restaurants extends React.Component {
             ));
         }
 
+        //filter by max_time
+        if (this.state.max_time) {
+            rests = rests.filter(rest => rest.max_time <= this.state.max_time);
+        }
+
         return (
             <div>
 
@@ -87,6 +99,14 @@ class Restaurants extends React.Component {
 
                     <CheckBox title={'Kosher only?'} name={'isKosher'} toggle={this.onToggleCheckbox.bind(this)}/>
                     <CheckBox title={'10bis only?'} name={'isTenbis'} toggle={this.onToggleCheckbox.bind(this)}/>
+
+
+                    <RangeBar
+                        title='Max delivery time:'
+                        name="max_time"
+                        val={+this.state.max_time}
+                        update={this.onMaxTimeUpdate.bind(this)}
+                    />
 
                     <select
                         onChange={this.onCuisineSelected.bind(this)}
@@ -114,8 +134,8 @@ class Restaurants extends React.Component {
 }
 
 
-Restaurants.propTypes = {
-    restaurants: PropTypes.array.isRequired,
+Restaurants.PropTypes = {
+    restaurants: React.PropTypes.array.isRequired
 };
 
 //temp internal styling
