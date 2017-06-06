@@ -22,7 +22,7 @@ unless Rails.env.test?
   Restaurant.create!(name: 'Salatim',
                      cuisine: 'Salads',
                      rating: 2,
-                     tenbis: true,
+                     tenbis: false,
                      address: 'Haarbaa 10, Tel Aviv Yaffo',
                      max_time: 20,
                      kosher: true)

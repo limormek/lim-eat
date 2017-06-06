@@ -6,6 +6,7 @@ import StarRatingComponent from 'react-star-rating-component';
 import {COLOR_PRIMARY, COLOR_UNSELECTED} from '../../constants/restaurantsConstants'
 import Header from '../Header/Header';
 import Restaurant from '../RestaurantItem/Restaurant';
+import CheckBox from '../Filters/Checkbox'
 
 
 const cuisineTypes = [
@@ -27,12 +28,12 @@ class Restaurants extends React.Component {
         this.setState({filterCuisine: e.target.value})
     }
 
-    onKosherClick(e) {
-        this.setState({filterKosher: e.target.checked})
-    }
-
-    onTenbisChecked(e) {
-        this.setState({filterTenbis: e.target.checked})
+    onToggleCheckbox(e) {
+        if (e.target.name === 'isTenbis') {
+            this.setState({filterTenbis: e.target.checked})
+        } else if (e.target.name === 'isKosher') {
+            this.setState({filterKosher: e.target.checked})
+        }
     }
 
     render() {
@@ -84,41 +85,22 @@ class Restaurants extends React.Component {
                         editing={true}
                     />
 
+                    <CheckBox title={'Kosher only?'} name={'isKosher'} toggle={this.onToggleCheckbox.bind(this)}/>
+                    <CheckBox title={'10bis only?'} name={'isTenbis'} toggle={this.onToggleCheckbox.bind(this)}/>
+
+                    <select
+                        onChange={this.onCuisineSelected.bind(this)}
+                        placeholder="What's your type?">
+
+                        {cuisineTypes.map(n => (
+                                <option key={n} value={n} defaultValue={this.state.selected === n}>{n}</option>
+                            )
+                        )}
+                    </select>
+
                 </div>
 
-                {/*kosher checkbox*/}
-                <span>Kosher only?</span>
-                <input
-                    name="isKosher"
-                    type="checkbox"
-                    checked={this.state.isKosher}
-                    onChange={this.onKosherClick.bind(this)}>
-                </input>
                 <br/>
-
-                <span>10bis only?</span>
-                <input
-                    name="isTenbis"
-                    type="checkbox"
-                    checked={this.state.filterTenbis}
-                    onChange={this.onTenbisChecked.bind(this)}>
-                </input>
-                <br/>
-
-                <select
-                    onChange={this.onCuisineSelected.bind(this)}
-                    placeholder="What's your type?">
-
-                    {cuisineTypes.map(n => (
-                            <option key={n} value={n} defaultValue={this.state.selected === n}>{n}</option>
-                        )
-                    )}
-
-                </select>
-
-
-                <hr />
-
 
                 <img style={mapStyle}
                      src={mapPlaceholderUrl}/>
