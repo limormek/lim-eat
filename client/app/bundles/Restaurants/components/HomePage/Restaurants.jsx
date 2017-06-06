@@ -3,11 +3,10 @@ import React from 'react';
 
 import StarRatingComponent from 'react-star-rating-component';
 
+import {COLOR_PRIMARY, COLOR_UNSELECTED} from '../../constants/restaurantsConstants'
 import Header from '../Header/Header';
 import Restaurant from '../RestaurantItem/Restaurant';
 
-const COLOR_PRIMARY = '#00B6FF';
-const COLOR_UNSELECTED = '#E6E6E6';
 
 const cuisineTypes = [
     'What\'s your type?', 'Asian', 'Cafe', 'Italian', 'Hamburgers', 'Salads'
@@ -17,7 +16,7 @@ class Restaurants extends React.Component {
 
     constructor() {
         super();
-        this.state = {}
+        this.state = {filterTenbis: false, filterKosher: false}
     }
 
     onStarClick(nextValue, prevValue, name) {
@@ -28,8 +27,17 @@ class Restaurants extends React.Component {
         this.setState({filterCuisine: e.target.value})
     }
 
+    onKosherClick(e) {
+        this.setState({filterKosher: e.target.checked})
+    }
+
+    onTenbisChecked(e) {
+        this.setState({filterTenbis: e.target.checked})
+    }
+
     render() {
 
+        //todo change
         let mapPlaceholderUrl = "http://dailygenius.com/wp-content/uploads/2016/04/google-maps-new-interface1.jpg";
 
         let rests = this.props.restaurants
@@ -43,6 +51,19 @@ class Restaurants extends React.Component {
             rests = rests.filter(rest => (
                 this.state.filterCuisine === cuisineTypes[0] ||
                 rest.cuisine === this.state.filterCuisine
+            ));
+        }
+
+        //filter by kosher + 10bis
+        if (this.state.filterKosher) {
+            rests = rests.filter(rest => (
+                rest.kosher === this.state.filterKosher
+            ));
+        }
+
+        if (this.state.filterTenbis) {
+            rests = rests.filter(rest => (
+                rest.tenbis === this.state.filterTenbis
             ));
         }
 
@@ -65,9 +86,28 @@ class Restaurants extends React.Component {
 
                 </div>
 
+                {/*kosher checkbox*/}
+                <span>Kosher only?</span>
+                <input
+                    name="isKosher"
+                    type="checkbox"
+                    checked={this.state.isKosher}
+                    onChange={this.onKosherClick.bind(this)}>
+                </input>
+                <br/>
+
+                <span>10bis only?</span>
+                <input
+                    name="isTenbis"
+                    type="checkbox"
+                    checked={this.state.filterTenbis}
+                    onChange={this.onTenbisChecked.bind(this)}>
+                </input>
+                <br/>
+
                 <select
-                        onChange={this.onCuisineSelected.bind(this)}
-                        placeholder="What's your type?">
+                    onChange={this.onCuisineSelected.bind(this)}
+                    placeholder="What's your type?">
 
                     {cuisineTypes.map(n => (
                             <option key={n} value={n} defaultValue={this.state.selected === n}>{n}</option>

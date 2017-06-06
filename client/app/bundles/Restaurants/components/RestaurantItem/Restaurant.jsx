@@ -1,5 +1,6 @@
 import React from 'react';
 import StarRatingComponent from 'react-star-rating-component';
+import {COLOR_PRIMARY, COLOR_UNSELECTED} from '../../constants/restaurantsConstants'
 
 const Restaurant = (props) => (
     <li>
@@ -31,8 +32,8 @@ const Restaurant = (props) => (
                 name='Rating'
                 value={props.rest.rating}
                 starCount={3}
-                starColor={'#00B6FF'}
-                emptyStarColor={'#E6E6E6'}
+                starColor={COLOR_PRIMARY}
+                emptyStarColor={COLOR_UNSELECTED}
                 editing={false}
             />
         </div>

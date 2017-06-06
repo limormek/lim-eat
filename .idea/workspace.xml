@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2457920e-8487-4b7b-99ba-ac7e41873400" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/restaurant.rb" afterPath="$PROJECT_DIR$/app/models/restaurant.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage/Restaurants.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage/Restaurants.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/RestaurantItem/Restaurant.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/RestaurantItem/Restaurant.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/constants/restaurantsConstants.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/constants/restaurantsConstants.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170603114717_add_kosher_to_restaurants.rb" afterPath="$PROJECT_DIR$/db/migrate/20170603114717_add_kosher_to_restaurants.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -1345,7 +1340,7 @@
       <updated>1496302889272</updated>
       <workItem from="1496302890555" duration="15273000" />
       <workItem from="1496572715665" duration="1388000" />
-      <workItem from="1496586435392" duration="21554000" />
+      <workItem from="1496586435392" duration="21621000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1496312543259</created>
@@ -1424,11 +1419,18 @@
       <option name="project" value="LOCAL" />
       <updated>1496673338692</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fixed migration + cleanup">
+      <created>1496734927385</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1496734927385</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43139000" />
+    <option name="totallyTimeSpent" value="43206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1143" y="35" width="1307" height="1336" extended-state="0" />
@@ -1471,7 +1473,8 @@
     <MESSAGE value="basic restaurants list + some config files" />
     <MESSAGE value="Added rating &amp; cuisine filters" />
     <MESSAGE value="restructure" />
-    <option name="LAST_COMMIT_MESSAGE" value="restructure" />
+    <MESSAGE value="fixed migration + cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed migration + cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
