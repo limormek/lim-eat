@@ -15,7 +15,7 @@
 #
 
 class Restaurant < ApplicationRecord
-  validates :name, :cuisine, :rating, :address, :max_time, :kosher, presence: true
+  validates :name, :cuisine, :rating, :address, :max_time, presence: true
   validates :rating, numericality: true
   validates :rating, inclusion: 1..3
 end

@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20170603114717) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "Restaurants", force: :cascade do |t|
+  create_table "restaurants", force: :cascade do |t|
     t.string "name"
     t.string "cuisine"
     t.integer "rating"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20170603114717) do
     t.integer "max_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "kosher"
+    t.boolean "kosher", null: false
   end
 
 end
