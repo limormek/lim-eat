@@ -1,21 +1,17 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-export default class Header extends React.Component {
-    render() {
-        return (
-            <div>
-                <h3>
-                    Hello, hungry you!
-                </h3>
+export default function Header() {
+    return (
+        <div>
+            <h3>
+                Hello, hungry you!
+            </h3>
 
-                <button style={divStyle}>Add a restaurant placeholder</button>
-            </div>
-
-        )
-    }
+            <Link to={'/new'}>
+                Add a new restaurant
+            </Link>
+        </div>
+    )
 }
 
-
-const divStyle = {
-    color: 'blue',
-};

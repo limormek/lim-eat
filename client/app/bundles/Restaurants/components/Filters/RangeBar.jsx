@@ -40,4 +40,4 @@ RangeBar.defaultProps = {
     max: 120,
     step: 5,
     val: 120
-}
+};
