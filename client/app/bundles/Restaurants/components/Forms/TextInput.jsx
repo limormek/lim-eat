@@ -1,6 +1,7 @@
 import React from 'react'
 import Formsy from 'formsy-react';
 
+
 const TextInput = React.createClass({
 
     // Add the Formsy Mixin

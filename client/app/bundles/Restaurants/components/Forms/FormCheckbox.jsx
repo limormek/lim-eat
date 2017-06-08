@@ -26,7 +26,7 @@ const WeInput = React.createClass({
 
         return (
             <div className={className}>
-                <input type="text" onChange={this.changeValue} value={this.getValue()}/>
+                <input type="checkbox" onChange={this.changeValue} value={this.getValue()}/>
                 <span>{errorMessage}</span>
             </div>
         );
