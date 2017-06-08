@@ -47,7 +47,7 @@ const MyAppForm = React.createClass({
                                className={'oui-form__input'} required/>
 
                     <span>Address:</span>
-                    <TextInput name="address" validations="isAlphanumeric" validationError="Invalid address" required/>
+                    <TextInput name="address" validationError="Invalid address" required/>
 
                     <span>Accepts 10bis?</span>
                     <FormCheckbox name="tenbis"/>
