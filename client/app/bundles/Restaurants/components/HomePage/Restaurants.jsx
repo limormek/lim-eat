@@ -10,7 +10,7 @@ import CheckBox from '../Filters/Checkbox'
 import RangeBar from '../Filters/RangeBar'
 
 const cuisineTypes = [
-    'What\'s your type?', 'Asian', 'Cafe', 'Italian', 'Hamburgers', 'Salads'
+    'Asian', 'Cafe', 'Italian', 'Hamburgers', 'Salads'
 ];
 
 class Restaurants extends React.Component {
@@ -21,36 +21,21 @@ class Restaurants extends React.Component {
 
     constructor() {
         super();
-        this.state = {filterTenbis: false, filterKosher: false, max_time: 120}
-    }
 
-    onStarClick(nextValue, prevValue, name) {
-        this.setState({filterStars: nextValue});
-    }
-
-    onCuisineSelected(e) {
-        this.setState({filterCuisine: e.target.value})
-    }
-
-    onToggleCheckbox(e) {
-        if (e.target.name === 'isTenbis') {
-            this.setState({filterTenbis: e.target.checked})
-        } else if (e.target.name === 'isKosher') {
-            this.setState({filterKosher: e.target.checked})
+        this.state = {
+            filterTenbis: false,
+            filterKosher: false,
+            max_time: 120,
+            filterStars: 0,
+            filteredRestList: []
         }
     }
 
-    onMaxTimeUpdate(e) {
-        this.setState({
-            max_time: e.target.value
-        })
+    componentWillMount() {
+        this.setState({filteredRestList: this.props.restaurants})
     }
 
-    render() {
-
-        //todo change
-        let mapPlaceholderUrl = "http://dailygenius.com/wp-content/uploads/2016/04/google-maps-new-interface1.jpg";
-
+    updateFilteredList() {
         let rests = this.props.restaurants;
         //filter by rating
         if (this.state.filterStars) {
@@ -83,47 +68,85 @@ class Restaurants extends React.Component {
             rests = rests.filter(rest => rest.max_time <= this.state.max_time);
         }
 
+        this.setState({
+            filteredRestList: rests
+        })
+    }
+
+    onStarClick(nextValue, prevValue, name) {
+        this.setState({filterStars: nextValue}, this.updateFilteredList);
+    };
+
+
+    onCuisineSelected(e) {
+        this.setState({filterCuisine: e.target.value}, this.updateFilteredList);
+    }
+
+    onToggleCheckbox(e) {
+        if (e.target.name === 'isTenbis') {
+            this.setState({filterTenbis: e.target.checked}, this.updateFilteredList)
+        } else if (e.target.name === 'isKosher') {
+            this.setState({filterKosher: e.target.checked}, this.updateFilteredList)
+        }
+    }
+
+    onMaxTimeUpdate(e) {
+        this.setState({
+            max_time: e.target.value
+        }, this.updateFilteredList);
+
+    }
+
+    render() {
+
+        //todo change
+        let mapPlaceholderUrl = "http://dailygenius.com/wp-content/uploads/2016/04/google-maps-new-interface1.jpg";
+
         return (
 
+            <div>
+                <Header/>
+
                 <div>
-                    <Header/>
 
-                    <div>
+                    {/*Filters*/}
+                    <Stars title='Filter by rating:'
+                           name='Rating' count={3} val={0}
+                           update={this.onStarClick.bind(this)}/>
+                    <CheckBox title={'Kosher only?'} name={'isKosher'} toggle={this.onToggleCheckbox.bind(this)}/>
+                    <CheckBox title={'10bis only?'} name={'isTenbis'} toggle={this.onToggleCheckbox.bind(this)}/>
 
-                        {/*Filters*/}
-                        <Stars title={'Filter by rating:'}
-                               name={'Rating'} count={3} val={0}
-                               update={this.onStarClick.bind(this)}/>
-                        <CheckBox title={'Kosher only?'} name={'isKosher'} toggle={this.onToggleCheckbox.bind(this)}/>
-                        <CheckBox title={'10bis only?'} name={'isTenbis'} toggle={this.onToggleCheckbox.bind(this)}/>
+                    <RangeBar
+                        title='Max delivery time:'
+                        name="max_time"
+                        val={+this.state.max_time}
+                        update={this.onMaxTimeUpdate.bind(this)}/>
 
-                        <RangeBar
-                            title='Max delivery time:'
-                            name="max_time"
-                            val={+this.state.max_time}
-                            update={this.onMaxTimeUpdate.bind(this)}/>
-
+                    <label>
+                        What's your type?
                         <select
                             onChange={this.onCuisineSelected.bind(this)}
                             placeholder="What's your type?">
+                            <option></option>
 
                             {cuisineTypes.map(n => (
                                     <option key={n} value={n} defaultValue={this.state.selected === n}>{n}</option>
                                 )
                             )}
                         </select>
-
-                    </div>
-
-                    <br/>
-
-                    <img style={mapStyle}
-                         src={mapPlaceholderUrl}/>
-                    <ul>
-                        {rests.map(item => <Restaurant key={item.name} rest={item}/>)}
-                    </ul>
+                    </label>
 
                 </div>
+
+                <br/>
+
+                <img style={mapStyle}
+                     src={mapPlaceholderUrl}/>
+                <ul>
+                    {this.state.filteredRestList.map(item => <Restaurant key={item.name} rest={item}/>)}
+                </ul>
+
+            </div>
 
         )
     }

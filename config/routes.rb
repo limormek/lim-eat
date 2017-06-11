@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  # resources :restaurants
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :restaurants, only: [:index, :create, :show]
+
+  post '/create', to: 'restaurants#create'
 
   get '(*path)', to: 'restaurants#index'
 

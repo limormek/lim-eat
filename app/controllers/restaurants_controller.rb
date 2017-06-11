@@ -1,4 +1,10 @@
 class RestaurantsController < ApplicationController
+  include DefaultSerializerConcern
+  skip_before_action :verify_authenticity_token, only: [:create]
+
+  # self.default_serializer = RestaurantSerializer
+
+
   layout "restaurants"
   before_action :set_restaurant, only: [:show, :edit, :update, :destroy]
 
@@ -29,8 +35,8 @@ class RestaurantsController < ApplicationController
 
     respond_to do |format|
       if @restaurant.save
-        format.html { redirect_to @restaurant, notice: 'Restaurant was successfully created.' }
-        format.json { render :show, status: :created, location: @restaurant }
+        # format.html { redirect_to @restaurant, notice: 'Restaurant was successfully created.' }
+        format.json { render status: :created, json: @restaurant, serializer: RestaurantSerializer }
       else
         format.html { render :new }
         format.json { render json: @restaurant.errors, status: :unprocessable_entity }
@@ -70,6 +76,6 @@ class RestaurantsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def restaurant_params
-      params.require(:restaurant).permit(:name, :cuisine, :rating, :tenbis, :address, :max_time)
+      params.require(:restaurant).permit(:name, :cuisine, :rating, :tenbis, :address, :max_time, :kosher)
     end
 end

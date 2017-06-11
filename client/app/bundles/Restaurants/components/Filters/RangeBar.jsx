@@ -4,19 +4,21 @@ import React from 'react';
 export default class RangeBar extends React.Component {
     render() {
 
+        const {title, name, min, max, step, val, update} = this.props;
+
         return (
             <div>
-                <span>{this.props.title}</span>
+                <span>{title}</span>
                 <input
-                    name={this.props.name}
+                    name={name}
                     type="range"
-                    min={this.props.min}
-                    max={this.props.max}
-                    step={this.props.step}
+                    min={min}
+                    max={max}
+                    step={step}
 
-                    defaultValue={this.props.val}
-                    onChange={this.props.update} />
-                {this.props.val}
+                    defaultValue={val}
+                    onChange={update} />
+                {val}
 
             </div>
         )

@@ -2,14 +2,16 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 export default class CheckBox extends React.Component {
+
     render() {
+        const {name, title, toggle} = this.props;
         return (
             <div>
-                <span>{this.props.title}</span>
+                <span>{title}</span>
                 <input
-                    name={this.props.name}
+                    name={name}
                     type="checkbox"
-                    onChange={this.props.toggle}>
+                    onChange={toggle}>
                 </input>
             </div>
         )

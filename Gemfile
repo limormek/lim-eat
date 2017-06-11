@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'react_on_rails', '~>8.0.0'
 
+gem 'active_model_serializers', '~> 0.10.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -74,3 +76,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'mini_racer', platforms: :ruby
 gem 'webpacker_lite'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-es6-promise-polyfill'
+end

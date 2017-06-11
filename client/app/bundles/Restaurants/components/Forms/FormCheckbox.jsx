@@ -1,7 +1,7 @@
 import React from 'react'
 import Formsy from 'formsy-react';
 
-const WeInput = React.createClass({
+const FormCheckbox = React.createClass({
 
     // Add the Formsy Mixin
     mixins: [Formsy.Mixin],
@@ -26,11 +26,11 @@ const WeInput = React.createClass({
 
         return (
             <div className={className}>
-                <input type="checkbox" onChange={this.changeValue} value={this.getValue()}/>
+                <input type="checkbox" onChange={this.changeValue} value={this.getValue()} />
                 <span>{errorMessage}</span>
             </div>
         );
     }
 });
 
-export default WeInput;
+export default FormCheckbox;

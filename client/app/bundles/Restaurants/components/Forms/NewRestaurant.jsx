@@ -3,6 +3,8 @@ import Formsy from 'formsy-react'
 import TextInput from './TextInput'
 import FormCheckbox from './FormCheckbox'
 
+import Api from '../../api'
+
 
 Formsy.addValidationRule('isRatingValid', (values, value) => {
     value = parseInt(value);
@@ -16,7 +18,8 @@ Formsy.addValidationRule('isRatingValid', (values, value) => {
 const MyAppForm = React.createClass({
     getInitialState() {
         return {
-            canSubmit: false
+            canSubmit: false,
+            added: false,
         }
     },
     enableButton() {
@@ -30,10 +33,30 @@ const MyAppForm = React.createClass({
         });
     },
     submit(model) {
-        // someDep.saveEmail(model.email);
-        console.log(model);
+        const {name, cuisine, rating, tenbis, address, max_time, kosher} = model;
+
+        let data = {restaurant: {
+            name: name,
+            cuisine: cuisine,
+            rating: rating,
+            tenbis: tenbis,
+            address: address,
+            max_time: max_time,
+            kosher: kosher
+        }};
+
+        Api.post('/','create', JSON.stringify(data), (data) =>  {
+            this.setState({ added: true });
+        })
     },
     render() {
+        if (this.state.added) {
+            return <div>
+                <h1>Restaurant Successfully added!</h1>
+                <a href="/">Return</a>
+            </div>
+        }
+
         return (
             <div>
                 <h3>Add a new restaurant</h3>
@@ -41,24 +64,26 @@ const MyAppForm = React.createClass({
                     <span>Restaurant Name:</span>
 
 
-                    <TextInput name="rest_name" required/>
+                    <TextInput name="name" required />
                     <span>Cuisine:</span>
                     <TextInput name="cuisine" validations="isWords" validationError="Well, the cuisine should be a word"
-                               className={'oui-form__input'} required/>
+                               className={'oui-form__input'} required />
 
-                    <span>Address:</span>
-                    <TextInput name="address" validationError="Invalid address" required/>
-
-                    <span>Accepts 10bis?</span>
-                    <FormCheckbox name="tenbis"/>
-                    <span>Kosher?</span>
-                    <FormCheckbox name="kosher"/>
                     <span>Rating:</span>
                     <TextInput name="rating" validations="isRatingValid"
-                               validationError="The rating should be a number between 1-3" required/>
+                               validationError="The rating should be a number between 1-3" required />
+                    <span>Accepts 10bis?</span>
+                    <FormCheckbox name="tenbis" />
+
+                    <span>Address:</span>
+                    <TextInput name="address" validationError="Invalid address" required />
 
                     <span>Max delivery time (minutes):</span>
-                    <TextInput name="max_time" validations="isNumeric" validationError="Invalid number" required/>
+                    <TextInput name="max_time" validations="isNumeric" validationError="Invalid number" required />
+
+                    <span>Kosher?</span>
+                    <FormCheckbox name="kosher" />
+
                     <br/>
 
                     <button type="submit" disabled={!this.state.canSubmit}>Submit</button>
