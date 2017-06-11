@@ -33,7 +33,10 @@ const MyAppForm = React.createClass({
         });
     },
     submit(model) {
-        const {name, cuisine, rating, tenbis, address, max_time, kosher} = model;
+        let {name, cuisine, rating, tenbis, address, max_time, kosher} = model;
+
+        tenbis = (tenbis === undefined) ? false : tenbis;
+        kosher = (kosher === undefined) ? false : kosher;
 
         let data = {restaurant: {
             name: name,
