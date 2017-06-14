@@ -7,7 +7,7 @@ export default class RangeBar extends React.Component {
         const {title, name, min, max, step, val, update} = this.props;
 
         return (
-            <div>
+            <div className="filter">
                 <span>{title}</span>
                 <input
                     name={name}
@@ -39,7 +39,7 @@ RangeBar.propTypes = {
 
 RangeBar.defaultProps = {
     min: 15,
-    max: 120,
+    max: 60,
     step: 5,
-    val: 120
+    val: 60
 };

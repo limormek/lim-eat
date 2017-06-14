@@ -1,0 +1,104 @@
+.header {
+
+  height: 400px;
+  background: url('http://s4.favim.com/orig/50/chocolate-food-ice-cream-pink-yummy-Favim.com-458738.jpg');
+  background-size: cover;
+  background-position: 0px -75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    align-content: center;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 2px 2px #000000;
+  }
+}
+
+.wrapper-container {
+  background: whitesmoke;
+  min-height: 600px;
+}
+
+.sub-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.filters {
+  padding: 20px;
+  float: left;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.filter {
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.subtitle {
+  font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+  font-weight: bold;
+}
+
+.map {
+  float: right;
+  width: 50%;
+  height: 500px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.wework {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -20px;
+  top: -20px;
+
+  border: 4px solid #252729;
+  border-radius: 40px;
+  background-color: #f4f4f6;
+  text-align: center;
+  color: #252729;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 7px;
+}
+
+.restPin {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: -20px;
+  top: -20px;
+  background: url('http://www.clker.com/cliparts/b/7/6/5/1308001441853739087google%20maps%20pin.svg.hi.png');
+  background-size: cover;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 50%;
+}
+
+.pageContent {
+  position: relative;
+}
+
+.btn-circle.btn-lg {
+  position: absolute;
+  top: -45px;
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+  background-color: #CF001C;
+}

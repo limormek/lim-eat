@@ -8,8 +8,8 @@ export default class Stars extends React.Component {
     render() {
 
         return (
-            <div>
-                <span>{this.props.title}</span>
+            <div className="filter">
+                <span>{this.props.title}</span><br/>
                 <StarRatingComponent
                     name={this.props.name}
                     value={this.props.val}

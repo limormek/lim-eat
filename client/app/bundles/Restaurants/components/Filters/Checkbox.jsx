@@ -6,8 +6,8 @@ export default class CheckBox extends React.Component {
     render() {
         const {name, title, toggle} = this.props;
         return (
-            <div>
-                <span>{title}</span>
+            <div className="filter">
+                <span>{title} </span>
                 <input
                     name={name}
                     type="checkbox"

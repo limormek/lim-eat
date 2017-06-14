@@ -37,6 +37,15 @@ unless Rails.env.test?
                      max_time: 40,
                      kosher: false)
 
+# . . .
+
+  Restaurant.create!(name: 'Juno',
+                     cuisine: 'Cafe',
+                     rating: 3,
+                     tenbis: false,
+                     address: 'Kikar Milano, Tel Aviv',
+                     max_time: 60,
+                     kosher: false)
 
 # . . .
 
@@ -61,7 +70,7 @@ unless Rails.env.test?
 # . . .
 
   Restaurant.create!(name: 'Black Burgers',
-                     cuisine: 'Hamburgers',
+                     cuisine: 'Meat',
                      rating: 2,
                      tenbis: true,
                      address: 'Azrieli 132, Tel Aviv Yaffo',
@@ -97,5 +106,15 @@ unless Rails.env.test?
                      address: 'Kikar Milano, Tel Aviv',
                      max_time: 30,
                      kosher: false)
+
+# . . .
+
+  Restaurant.create!(name: 'The Magician',
+                     cuisine: 'Meat',
+                     rating: 2,
+                     tenbis: true,
+                     address: 'Shlomo Hamelech 1, Tel Aviv',
+                     max_time: 15,
+                     kosher: true)
 
 end

@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2457920e-8487-4b7b-99ba-ac7e41873400" name="Default" comment="removed address validation">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/concerns/default_serializer_concern.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/restaurant_serializer.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/assets/styles/app-variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/assets/styles/oui_fixes.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/api.jsx" />
+    <list default="true" id="2457920e-8487-4b7b-99ba-ac7e41873400" name="Default" comment="added bootstrap, scss">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/fonts/efcuisines-regular-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/config/keys.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/header.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/restaurant.scss" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/oui_fixes.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/we-eat.iml" afterPath="$PROJECT_DIR$/.idea/we-eat.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/GMap.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MyPlace.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/WeWorkLocation.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/RestaurantItem/Restaurant.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/postcss.config.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/restaurants.scss" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage/Restaurants.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/api.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/schemas/api.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/restaurants_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/restaurants_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/restaurants.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/restaurants.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Checkbox.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Checkbox.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/RangeBar.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/RangeBar.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/FormCheckbox.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/FormCheckbox.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Stars.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Stars.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/NewRestaurant.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/NewRestaurant.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Header/Header.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Header/Header.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage/Restaurants.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage/Restaurants.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/constants/restaurantsConstants.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/constants/restaurantsConstants.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/RestaurantItem/Restaurant.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/components/RestaurantItem/Restaurant.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/bundles/Restaurants/startup/RestaurantsApp.jsx" afterPath="$PROJECT_DIR$/client/app/bundles/Restaurants/startup/RestaurantsApp.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/package.json" afterPath="$PROJECT_DIR$/client/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/webpack.config.js" afterPath="$PROJECT_DIR$/client/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -45,37 +53,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Restaurants.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Restaurants.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage/Restaurants.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1142">
-              <caret line="136" column="28" lean-forward="false" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
+            <state relative-caret-position="-2152">
+              <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <element signature="e#169#205#0" expanded="true" />
+                <element signature="e#263#299#0" expanded="true" />
+                <element signature="n#!!block;n#componentWillMount#0;n#Restaurants#0" expanded="false" />
+                <element signature="n#!!block;n#onStarClick#0;n#Restaurants#0" expanded="false" />
+                <element signature="n#!!block;n#onToggleCheckbox#0;n#Restaurants#0" expanded="false" />
+                <element signature="n#!!block;n#onMaxTimeUpdate#0;n#Restaurants#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Header/Header.jsx">
+      <file leaf-file-name="GMap.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/GMap.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="432">
+              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextInput.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/TextInput.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -83,52 +83,78 @@
       <file leaf-file-name="Restaurant.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/RestaurantItem/Restaurant.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="198">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/api.jsx">
+      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="1224">
+              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewRestaurant.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/NewRestaurant.jsx">
+      <file leaf-file-name="Header.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Header/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="72">
+              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FormCheckbox.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/FormCheckbox.jsx">
+      <file leaf-file-name="Checkbox.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Checkbox.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RangeBar.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/RangeBar.jsx">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state relative-caret-position="-172">
+              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="restaurant.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/restaurant.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stars.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Stars.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -140,44 +166,45 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Test-Spec Template" />
+        <option value="Ruby Class Template" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="ES6" />
-        <option value="Ruby Class Template" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>react.createcla</find>
-      <find>react.createclass</find>
-      <find>type</find>
-      <find>cansubmit</find>
-      <find>className</find>
-      <find>form__input</find>
-      <find>required</find>
-      <find>react</find>
-      <find>auth</find>
-      <find>json</find>
-      <find>raise</find>
-      <find>default_serializer</find>
-      <find>this.state =</find>
-      <find>restaurants</find>
-      <find>c</find>
-      <find>crea</find>
-      <find>creat</find>
-      <find>create</find>
-      <find>createc</find>
-      <find>createcl</find>
-      <find>createcla</find>
-      <find>createclas</find>
-      <find>createclass</find>
-      <find>w</find>
-      <find>wei</find>
-      <find>wein</find>
-      <find>weinp</find>
-      <find>weinpu</find>
-      <find>weinput</find>
-      <find>updateFilteredList</find>
+      <find>o</find>
+      <find>orang</find>
+      <find>oran</find>
+      <find>or</find>
+      <find>ora</find>
+      <find>multimap</find>
+      <find>size</find>
+      <find>styles</find>
+      <find>top</find>
+      <find>greatPlaceCoords</find>
+      <find>orange</find>
+      <find>su</find>
+      <find>sub</find>
+      <find>subtite</find>
+      <find>subtit</find>
+      <find>cl</find>
+      <find>cla</find>
+      <find>classnam</find>
+      <find>classname</find>
+      <find>classname=&quot;</find>
+      <find>classname=&quot;s</find>
+      <find>classname=&quot;su</find>
+      <find>classname=&quot;sub</find>
+      <find>classname=&quot;subti</find>
+      <find>classname=&quot;subtit</find>
+      <find>classname=&quot;subtitle</find>
+      <find>classname=&quot;subtitle&quot;</find>
+      <find>Cafe</find>
+      <find>Asian</find>
+      <find>bind</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,44 +218,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/client/app/bundles/HelloWorld/components/HelloWorld.jsx" />
-        <option value="$PROJECT_DIR$/app/assets/components/restaurants/RestaurantsApp.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/HelloWorld/containers/HelloWorldContainer.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/HelloWorld/components/Restaurants.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/HelloWorld/containers/RestaurantsContainer.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/store/RestaurantsStore.jsx" />
-        <option value="$PROJECT_DIR$/app/views/hello_world/index.html.erb" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/containers/RestaurantsContainer.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/HelloWorld/startup/registration.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/store/registration.jsx" />
-        <option value="$PROJECT_DIR$/client/webpack.config.js" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/reducers/restaurantsReducer.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/startup/registration.jsx" />
-        <option value="$PROJECT_DIR$/app/views/layouts/restaurants.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Restaurants.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/RestaurantItem/Restaurant.jsx" />
-        <option value="$PROJECT_DIR$/app/models/restaurant.rb" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20170603114717_add_kosher_to_restaurants.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20170601080650_create_restaurants.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/StarsFilter.js" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/StarsFilter.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Stars.jsx" />
-        <option value="$PROJECT_DIR$/app/views/restaurants/index.html.erb" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/startup/RestaurantsApp.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Header/Header.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/WeInput.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/LabeledTextInput.jsx" />
-        <option value="$PROJECT_DIR$/client/app/assets/styles/oui_fixes.scss" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/LabeledTextField.jsx" />
         <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/TextInput.jsx" />
         <option value="$PROJECT_DIR$/client/app/api.jsx" />
-        <option value="$PROJECT_DIR$/client/package.json" />
         <option value="$PROJECT_DIR$/app/controllers/restaurants_serializer.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/restaurant_serializer.rb" />
@@ -236,12 +227,48 @@
         <option value="$PROJECT_DIR$/app/controllers/restaurants_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/constants/restaurantsConstants.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Checkbox.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/RangeBar.jsx" />
         <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/api.jsx" />
         <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/FormCheckbox.jsx" />
-        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage/Restaurants.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/RestaurantItem/Restaurant.css" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/restaurants.scss" />
+        <option value="$PROJECT_DIR$/client/webpack.config.js" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage/Restaurants.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/header.scss.css" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/startup/RestaurantsApp.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/RangeBar.jsx" />
         <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/NewRestaurant.jsx" />
+        <option value="$PROJECT_DIR$/app/assets/config/keys.js" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MapContainer.jsx" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/ScriptCache.js" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/GoogleApiComponent.jsx" />
+        <option value="$PROJECT_DIR$/app/views/layouts/restaurants.html.erb" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MyGratePlacesStyle.js" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MyPlaces.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/WeWorkLocation.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/helpers/calc_markers_visibility.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/helpers/custom_distance.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/helpers/marker_styles.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/helpers/balloon_pos.jsx" />
+        <option value="$PROJECT_DIR$/client/.babelrc" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MarkerExample.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/helpers/marker_descriptions.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MultiMap.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/EventsMapPage.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/SearchBox.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MyGratePlacesStyle.jsx" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/restaurant.scss" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/GMap.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MyPlace.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Stars.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Header/Header.jsx" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Checkbox.jsx" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/header.scss" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/RestaurantItem/Restaurant.jsx" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/client/package.json" />
+        <option value="$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage/Restaurants.jsx" />
       </list>
     </option>
   </component>
@@ -258,12 +285,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/client/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1035" />
+    <option name="x" value="155" />
     <option name="y" value="23" />
-    <option name="width" value="1415" />
+    <option name="width" value="2287" />
     <option name="height" value="1336" />
   </component>
   <component name="ProjectView">
@@ -283,6 +311,7 @@
     <panes>
       <pane id="RailsProjectView" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -447,36 +476,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="store" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="we-eat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="we-eat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Restaurants" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -511,75 +510,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HomePage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="we-eat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="we-eat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Restaurants" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Header" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="we-eat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="we-eat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Restaurants" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Forms" />
+              <option name="myItemId" value="GoogleApiComponent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -756,6 +687,10 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -779,9 +714,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="we-eat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="we-eat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -789,21 +745,23 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v6.0.0/bin/node" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/limor.mekaiten/Projects/we-eat/client/app/bundles/Restaurants/components/HomePage/Restaurants.jsx" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/helpers" />
+      <recent name="$PROJECT_DIR$/app/assets/images/map_icons" />
+      <recent name="$PROJECT_DIR$/app/assets/stylesheets/fonts" />
+      <recent name="$PROJECT_DIR$/client" />
+      <recent name="$PROJECT_DIR$/client/app/assets/styles" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent" />
+      <recent name="$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage" />
+      <recent name="$PROJECT_DIR$/client/app/bundles/Restaurants/schemas" />
       <recent name="$PROJECT_DIR$/client/app/bundles/Restaurants" />
       <recent name="$PROJECT_DIR$/client/app/bundles/Restaurants/store" />
-      <recent name="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters" />
-      <recent name="$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage" />
-      <recent name="$PROJECT_DIR$/client/app/bundles/Restaurants/startup" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/controllers/concerns" />
-      <recent name="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms" />
-      <recent name="$PROJECT_DIR$/client/app/assets/styles" />
-      <recent name="$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters" />
-      <recent name="$PROJECT_DIR$/app/views/layouts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1150,7 +1108,8 @@
       <workItem from="1496816992912" duration="9916000" />
       <workItem from="1496835630010" duration="64000" />
       <workItem from="1496835702203" duration="16698000" />
-      <workItem from="1496925226507" duration="17147000" />
+      <workItem from="1496925226507" duration="29402000" />
+      <workItem from="1497261342001" duration="29702000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1496312543259</created>
@@ -1278,17 +1237,30 @@
       <option name="project" value="LOCAL" />
       <updated>1496909219902</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="PR fixes + added redirection to restaurants page after successfully adding one">
+      <created>1497186732120</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1497186732120</updated>
+    </task>
+    <task id="LOCAL-00020" summary="set default value for checkboxes">
+      <created>1497188155955</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1497188155955</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99617000" />
+    <option name="totallyTimeSpent" value="141574000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1035" y="23" width="1415" height="1336" extended-state="0" />
-    <editor active="true" />
+    <frame x="155" y="23" width="2287" height="1336" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25345957" sideWeight="0.4968504" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15634744" sideWeight="0.4968504" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1332,140 +1304,26 @@
     <MESSAGE value="Added routing to the app + a simple form" />
     <MESSAGE value="Added a restaurant create form" />
     <MESSAGE value="removed address validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed address validation" />
+    <MESSAGE value="PR fixes + added redirection to restaurants page after successfully adding one" />
+    <MESSAGE value="set default value for checkboxes" />
+    <option name="LAST_COMMIT_MESSAGE" value="set default value for checkboxes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/reducers/restaurantsReducer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.1.1/lib/active_record/core.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5922">
-          <caret line="329" column="8" lean-forward="false" selection-start-line="329" selection-start-column="8" selection-end-line="329" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/node_modules/react-router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Stars.jsx" />
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Stars.jsx" />
-    <entry file="file://$PROJECT_DIR$/client/node_modules/formsy-react/src/Mixin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="141" column="2" lean-forward="false" selection-start-line="141" selection-start-column="2" selection-end-line="141" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/startup/registration.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/restaurants.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/restaurants/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="2160">
+          <caret line="122" column="60" lean-forward="false" selection-start-line="122" selection-start-column="60" selection-end-line="122" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/node_modules/react/lib/React.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="66" column="15" lean-forward="false" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/restaurants/index.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/node_modules/formsy-react/lib/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5076">
-          <caret line="282" column="9" lean-forward="false" selection-start-line="282" selection-start-column="9" selection-end-line="282" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/node_modules/react-star-rating-component/dist/react-star-rating-component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="993">
-          <caret line="307" column="12" lean-forward="false" selection-start-line="307" selection-start-column="12" selection-end-line="307" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/node_modules/classnames/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/oui_fixes.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="188" column="23" lean-forward="true" selection-start-line="188" selection-start-column="23" selection-end-line="188" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/styles/oui_fixes.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="341" column="18" lean-forward="true" selection-start-line="341" selection-start-column="18" selection-end-line="341" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/assets/styles/app-variables.scss">
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage/Restaurants.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -1473,261 +1331,413 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts/coffee-script.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/store/RestaurantsStore.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/rails-assets-es6-promise-polyfill-1.2.0/app/assets/javascripts/es6-promise-polyfill/promise.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.ru">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/content.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/restaurant_serializer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.1.1/lib/action_controller/metal/mime_responds.rb">
+    <entry file="file://$PROJECT_DIR$/client/node_modules/react-star-rating-component/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="177" column="11" lean-forward="true" selection-start-line="177" selection-start-column="11" selection-end-line="177" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/restaurants/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="100">
+          <caret line="118" column="35" lean-forward="true" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/startup/RestaurantsApp.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/node_modules/react-router-dom/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/concerns/default_serializer_concern.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding>
-            <marker date="1497166675000" expanded="true" signature="305:556" ph="##..." />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/restaurants_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-          <folding>
-            <marker date="1497182054000" expanded="true" signature="792:882" ph="##..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/restaurant.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170603114717_add_kosher_to_restaurants.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170601080650_create_restaurants.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/constants/restaurantsConstants.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-ui-rails-6.0.1/app/assets/javascripts/jquery-ui/widgets/dialog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="142" column="12" lean-forward="false" selection-start-line="142" selection-start-column="12" selection-end-line="142" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Checkbox.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Stars.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/RestaurantItem/Restaurant.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/RangeBar.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/api.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/TextInput.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/FormCheckbox.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage/Restaurants.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1142">
-          <caret line="136" column="28" lean-forward="false" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#169#205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Header/Header.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/LabeledTextField.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="63" column="6" lean-forward="true" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rdoc/generator/template/json_index/js/navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+        <state relative-caret-position="36">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Forms/NewRestaurant.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="268">
+          <caret line="46" column="33" lean-forward="true" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/shoulda-matchers-3.1.1/doc_config/yard/templates/default/fulldoc/html/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="2299" column="15" lean-forward="false" selection-start-line="2299" selection-start-column="1" selection-end-line="2299" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/config/manifest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/node_modules/google-maps-react/dist/GoogleApiComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/node_modules/google-maps-react/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/ScriptCache.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="55" column="46" lean-forward="true" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/GoogleApiComponent.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionview-5.1.1/lib/action_view/helpers/asset_tag_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/restaurants.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MapContainer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/node_modules/react/react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/node_modules/react-pure-render/function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/config/keys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="3" column="68" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/WeWorkLocation.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/helpers/calc_markers_visibility.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/helpers/custom_distance.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/helpers/balloon_pos.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/node_modules/prop-types/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/helpers/marker_styles.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/helpers/marker_descriptions.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MultiMap.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="994">
+          <caret line="114" column="26" lean-forward="true" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/helpers/enhanceElement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/SearchBox.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/node_modules/google-map-react/dist/GoogleMapReact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="124" column="9" lean-forward="false" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/node_modules/google-map-react/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/map_icons/map_icon_std_orange.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="2" lean-forward="false" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MyGratePlacesStyle.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MyPlace.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Stars.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/restaurant.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Filters/Checkbox.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/Header/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/webpack/development/webpack-bundle-b7adba2ba82f90139d3b.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="1989" column="2630" lean-forward="false" selection-start-line="1989" selection-start-column="2630" selection-end-line="1989" selection-end-column="2630" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/RestaurantItem/Restaurant.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/EventsMapPage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/MarkerExample.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/GoogleApiComponent/GMap.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-172">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app/bundles/Restaurants/components/HomePage/Restaurants.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2152">
+          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#263#299#0" expanded="true" />
+            <element signature="n#!!block;n#componentWillMount#0;n#Restaurants#0" expanded="false" />
+            <element signature="n#!!block;n#onStarClick#0;n#Restaurants#0" expanded="false" />
+            <element signature="n#!!block;n#onToggleCheckbox#0;n#Restaurants#0" expanded="false" />
+            <element signature="n#!!block;n#onMaxTimeUpdate#0;n#Restaurants#0" expanded="false" />
           </folding>
         </state>
       </provider>
