@@ -15,7 +15,7 @@ Formsy.addValidationRule('isRatingValid', (values, value) => {
 });
 
 
-const MyAppForm = React.createClass({
+const RestaurantForm = React.createClass({
     getInitialState() {
         return {
             canSubmit: false,
@@ -33,10 +33,13 @@ const MyAppForm = React.createClass({
         });
     },
     submit(model) {
-        let {name, cuisine, rating, tenbis, address, max_time, kosher} = model;
+        let {name, cuisine, rating, tenbis, address, max_time, kosher, lat, lng} = model;
 
         tenbis = (tenbis === undefined) ? false : tenbis;
         kosher = (kosher === undefined) ? false : kosher;
+
+        lat = (lat === undefined) ? 32.081253 : lat;
+        lng = (lng === undefined) ? 34.779964 : lng;
 
         let data = {
             restaurant: {
@@ -46,7 +49,9 @@ const MyAppForm = React.createClass({
                 tenbis: tenbis,
                 address: address,
                 max_time: max_time,
-                kosher: kosher
+                kosher: kosher,
+                lat: lat,
+                lng: lng
             }
         };
 
@@ -58,13 +63,13 @@ const MyAppForm = React.createClass({
         if (this.state.added) {
             return <div>
                 <h3>Restaurant Successfully added!</h3>
-                <a href="/">Back to home page</a>
+                <a href="/"><i className="glyphicon glyphicon-arrow-left"></i>  Back to home page</a>
             </div>
         }
 
         return (
             <div>
-                <h3>Add a new restaurant</h3>
+                <h3 className="form-title">Add a new restaurant</h3>
                 <div>
 
                     <Formsy.Form
@@ -96,9 +101,16 @@ const MyAppForm = React.createClass({
                         <span>Kosher?</span>
                         <FormCheckbox name="kosher"/>
 
+                        {/*32.081253, 34.779964*/}
+                        <span>Latitude:</span>
+                        <TextInput name="lat" validations="isFloat" validationError="Invalid coordinates"/>
+                        <span>Longitude:</span>
+                        <TextInput name="lng" validations="isFloat" validationError="Invalid coordinates"/>
+
+
                         <br/>
 
-                        <button type="submit" disabled={!this.state.canSubmit}>Submit</button>
+                        <button className="submit" type="submit" disabled={!this.state.canSubmit}>Submit</button>
                     </Formsy.Form>
 
                     <div className="sidePhoto"></div>
@@ -108,5 +120,5 @@ const MyAppForm = React.createClass({
     }
 });
 
-export default MyAppForm;
+export default RestaurantForm;
 

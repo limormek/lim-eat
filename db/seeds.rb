@@ -17,7 +17,9 @@ unless Rails.env.test?
                      tenbis: true,
                      address: 'Haarbaa 5, Tel Aviv Yaffo',
                      max_time: 25,
-                     kosher: false)
+                     kosher: false,
+                     lat: 32.070650,
+                     lng: 34.783434)
 # . . .
   Restaurant.create!(name: 'Salatim',
                      cuisine: 'Salads',
@@ -25,7 +27,9 @@ unless Rails.env.test?
                      tenbis: false,
                      address: 'Haarbaa 10, Tel Aviv Yaffo',
                      max_time: 20,
-                     kosher: true)
+                     kosher: true,
+                     lat: 32.070606,
+                     lng: 34.783832)
 
 # . . .
 
@@ -35,7 +39,21 @@ unless Rails.env.test?
                      tenbis: true,
                      address: 'Ibn Gabirol 135, Tel Aviv Yaffo',
                      max_time: 40,
-                     kosher: false)
+                     kosher: false,
+                     lat:32.089283,
+                     lng:34.782356)
+
+# . . .
+
+  Restaurant.create!(name: 'Sicilianit',
+                     cuisine: 'Ice Cream',
+                     rating: 3,
+                     tenbis: false,
+                     address: 'Ibn Gabirol 94, Tel Aviv Yaffo',
+                     max_time: 10,
+                     kosher: true,
+                     lat:32.082811,
+                     lng:34.781699)
 
 # . . .
 
@@ -45,7 +63,9 @@ unless Rails.env.test?
                      tenbis: false,
                      address: 'Kikar Milano, Tel Aviv',
                      max_time: 60,
-                     kosher: false)
+                     kosher: false,
+                     lat: 32.093764,
+                     lng: 34.785108)
 
 # . . .
 
@@ -53,29 +73,35 @@ unless Rails.env.test?
                      cuisine: 'Salads',
                      rating: 1,
                      tenbis: true,
-                     address: 'Ibn Gabirol 30, Tel Aviv Yaffo',
+                     address: 'London Minister, Tel Aviv Yaffo',
                      max_time: 15,
-                     kosher: true)
+                     kosher: true,
+                     lat:32.075671,
+                     lng: 34.784223)
 
 # . . .
 
-  Restaurant.create!(name: 'Montifiore Cafe',
-                     cuisine: 'Salads',
-                     rating: 2,
+  Restaurant.create!(name: 'Joseph and Sons',
+                     cuisine: 'Fish and Chips',
+                     rating: 3,
                      tenbis: true,
-                     address: 'Ibn Gabirol 95, Tel Aviv Yaffo',
-                     max_time: 20,
-                     kosher: false)
+                     address: 'Rabin Square, Tel Aviv',
+                     max_time: 15,
+                     kosher: false,
+                     lat:32.079392,
+                     lng: 34.781247)
 
 # . . .
 
-  Restaurant.create!(name: 'Black Burgers',
+  Restaurant.create!(name: 'Segev Concept',
                      cuisine: 'Meat',
                      rating: 2,
                      tenbis: true,
-                     address: 'Azrieli 132, Tel Aviv Yaffo',
-                     max_time: 40,
-                     kosher: true)
+                     address: 'Sarona, Tel Aviv',
+                     max_time: 20,
+                     kosher: false,
+                     lat:32.071481,
+                     lng: 34.787011)
 
 # . . .
 
@@ -85,7 +111,9 @@ unless Rails.env.test?
                      tenbis: true,
                      address: 'Montifiore 7, Tel Aviv Yaffo',
                      max_time: 30,
-                     kosher: false)
+                     kosher: false,
+                     lat:32.065238,
+                     lng: 34.769722)
 
 # . . .
 
@@ -95,7 +123,9 @@ unless Rails.env.test?
                      tenbis: false,
                      address: 'Neve Tzedek',
                      max_time: 25,
-                     kosher: true)
+                     kosher: true,
+                     lat: 32.065728,
+                     lng: 34.766934)
 
 # . . .
 
@@ -105,7 +135,10 @@ unless Rails.env.test?
                      tenbis: false,
                      address: 'Kikar Milano, Tel Aviv',
                      max_time: 30,
-                     kosher: false)
+                     kosher: false,
+                     lat: 32.094098,
+                     lng: 34.785171)
+
 
 # . . .
 
@@ -115,6 +148,8 @@ unless Rails.env.test?
                      tenbis: true,
                      address: 'Shlomo Hamelech 1, Tel Aviv',
                      max_time: 15,
-                     kosher: true)
+                     kosher: true,
+                     lat: 32.076667,
+                     lng: 34.776614)
 
 end

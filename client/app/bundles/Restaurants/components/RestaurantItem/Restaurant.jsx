@@ -24,6 +24,14 @@ const cuisineToFont = (cuisine) => {
         return 'L';
     }
 
+    if(cuisine === 'Fish and Chips') {
+        return 'K';
+    }
+
+    if(cuisine === 'Ice Cream') {
+        return 'X';
+    }
+
     return 'F';
 };
 

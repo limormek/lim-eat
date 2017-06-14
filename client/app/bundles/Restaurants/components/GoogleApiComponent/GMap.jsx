@@ -9,18 +9,18 @@ import GoogleMap from 'google-map-react';
 import MyPlace from './MyPlace.jsx';
 import WeWorkLocation from './WeWorkLocation';
 
-export default class SimpleMapPage extends React.Component {
+export default class GMap extends React.Component {
     static propTypes = {
+        restList: PropTypes.array,
         center: PropTypes.array,
         zoom: PropTypes.number,
-        greatPlaceCoords: PropTypes.any
+        weworkPlaceCoords: PropTypes.any
     };
 
     static defaultProps = {
-        center: [32.075306, 34.781972],
+        center: [32.079182, 34.785519],
         zoom: 14,
-        greatPlaceCoords: {lat: 32.065229, lng: 34.769776}
-
+        weworkPlaceCoords: {lat: 32.075306, lng: 34.781972}
     };
 
     shouldComponentUpdate = shouldPureComponentUpdate;
@@ -30,15 +30,23 @@ export default class SimpleMapPage extends React.Component {
     }
 
     render() {
+        const {restList, center, zoom, weworkPlaceCoords} = this.props;
         return (
             <div className="map">
                 <GoogleMap
                     bootstrapURLKeys={{key: 'AIzaSyD9z80J0xTs9BrluT_bUDH6LxQet8p9ujM'}}
-                    center={this.props.center}
-                    zoom={this.props.zoom}>
-                    <WeWorkLocation lat={32.075306} lng={34.781972} text={'We'} /* Kreyser Avrora */ />
-                    <MyPlace lat={32.087192} lng={34.782392}  /* Kreyser Avrora */ />
-                    <MyPlace {...this.props.greatPlaceCoords}/* road circle */ />
+                    center={center}
+                    zoom={zoom}>
+
+                    <WeWorkLocation {...weworkPlaceCoords} text={'We'}/>
+
+
+                    {restList.length > 0 ?  restList.map(item =>
+                        <MyPlace key={item.name}
+                                 lat={item.lat}
+                                 lng={item.lng}
+                                 name={item.name}/>) : ''
+                    }
                 </GoogleMap>
             </div>
         );

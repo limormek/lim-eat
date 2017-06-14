@@ -3,7 +3,7 @@ import {Provider} from 'react-redux';
 import {BrowserRouter as Router, Route, BrowserRouter, Switch} from 'react-router-dom'
 
 import Restaurants from '../components/HomePage/Restaurants';
-import NewRestaurant from '../components/Forms/NewRestaurant';
+import NewRestaurant from '../components/Forms/RestaurantForm';
 
 
 // See documentation for https://github.com/reactjs/react-redux.

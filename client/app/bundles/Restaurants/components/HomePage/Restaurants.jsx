@@ -4,33 +4,21 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import Header from '../Header/Header';
 import Restaurant from '../RestaurantItem/Restaurant';
-import SimpleMapPage from '../GoogleApiComponent/GMap'
+import GMap from '../GoogleApiComponent/GMap'
 
 //Filters
 import Stars from '../Filters/Stars'
 import CheckBox from '../Filters/Checkbox'
 import RangeBar from '../Filters/RangeBar'
 
-import GoogleMap from 'google-map-react';
-import MyPlace from '../GoogleApiComponent/MyPlace.jsx';
-import WeWorkLocation from '../GoogleApiComponent/WeWorkLocation';
 const cuisineTypes = [
-    'Asian', 'Cafe', 'Italian', 'Meat', 'Salads'
+    'Asian', 'Cafe', 'Italian', 'Meat', 'Salads', 'Fish and Chips', 'Ice Cream'
 ];
 
 class Restaurants extends React.Component {
 
     static propTypes = {
         restaurants: React.PropTypes.array.isRequired,
-        center: PropTypes.array,
-        zoom: PropTypes.number,
-        greatPlaceCoords: PropTypes.any
-    };
-
-    static defaultProps = {
-        center: [32.079182, 34.785519],
-        zoom: 14,
-        greatPlaceCoords: {lat: 32.070650, lng: 34.783434}
     };
 
     constructor() {
@@ -120,15 +108,14 @@ class Restaurants extends React.Component {
 
             <div className="pageContent">
                 <Link to={'/new'}>
-                <button type="button" className="btn btn-danger btn-circle btn-lg">
-                    <i className="glyphicon glyphicon-plus"></i>
-                </button>
+                    <button type="button" className="btn btn-danger btn-circle btn-lg">
+                        <i className="glyphicon glyphicon-plus"></i>
+                    </button>
                 </Link>
 
                 <Header/>
 
                 <div>
-
                     <div className="filters">
 
                         {/*Filters*/}
@@ -158,39 +145,13 @@ class Restaurants extends React.Component {
                                 )}
                             </select>
                         </label>
-
                     </div>
 
-
-                    {/*<SimpleMapPage/>*/}
-
-                    {/* todo: for each restaurant, add its icon on the map.*/}
-
-                    <div className="map">
-                        <GoogleMap
-                            bootstrapURLKeys={{key: 'AIzaSyD9z80J0xTs9BrluT_bUDH6LxQet8p9ujM'}}
-                            center={this.props.center}
-                            zoom={this.props.zoom}>
-
-                            <WeWorkLocation lat={32.075306} lng={34.781972} text={'We'} />
-                            {/*{this.state.filteredRestList.map(item => <MyPlace key={item.name} rest={item}/>)}*/}
-                            <MyPlace lat={32.093764} lng={34.785108}  /* Juno*/  />
-                            <MyPlace lat={32.089283} lng={34.782356}  /* Olivery*/  />
-                            <MyPlace lat={32.065238} lng={34.769722} /* TYO*/ />
-                            <MyPlace lat={32.076667} lng={34.776614} /* ha kosem*/ />
-
-
-
-                            <MyPlace lat={32.076667} lng={34.776614} /* ha kosem*/ />
-
-                            <MyPlace {...this.props.greatPlaceCoords} onClick={this.onMapPinClick.bind(this)} /*Joya*/ />
-                        </GoogleMap>
-                    </div>
+                    <GMap restList={this.state.filteredRestList}/>
 
                 </div>
 
                 {this.state.filteredRestList.map(item => <Restaurant key={item.name} rest={item}/>)}
-
 
             </div>
 

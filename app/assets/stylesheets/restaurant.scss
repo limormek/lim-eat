@@ -70,6 +70,20 @@
  font-family: CuisineFont, "Gill Sans";
   color: #CF001C;
   font-size: 18px;
+}
 
+.form-title {
+  margin-bottom: 30px;
+}
+
+.submit {
+  background-color: #26a69a;
+  cursor: pointer !important;
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  border: none;
+  box-shadow: 2px 1px 1px #888888;
+  font-size: 16px;
 }
 

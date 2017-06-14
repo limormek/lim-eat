@@ -4,18 +4,32 @@ import shouldPureComponentUpdate from 'react-pure-render/function';
 
 export default class MyPlace extends React.Component {
     static propTypes = {
-        text: PropTypes.string,
-        onClick: PropTypes.func
+        name: PropTypes.string,
     };
 
     static defaultProps = {};
 
+    constructor() {
+        super();
+        this.state = {
+            clickOn: false
+        }
+    }
+
     shouldComponentUpdate = shouldPureComponentUpdate;
+
+    onClick() {
+        this.setState({clickOn: !this.state.clickOn});
+    }
 
     render() {
         return (
-            <div className="restPin" onClick={this.props.onClick}>
-                {this.props.text}
+            <div>
+                {this.state.clickOn ? <p className="triangle-isosceles top">{this.props.name}</p> : ''}
+
+                <div className="restPin"
+                     onClick={this.onClick.bind(this)}
+                />
             </div>
         );
     }
