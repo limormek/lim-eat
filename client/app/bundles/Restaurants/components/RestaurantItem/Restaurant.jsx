@@ -4,35 +4,26 @@ import {COLOR_PRIMARY, COLOR_UNSELECTED} from '../../constants/restaurantsConsta
 
 const cuisineToFont = (cuisine) => {
 
-    if(cuisine === 'Meat' || cuisine === 'Hamburgers') {
-        return 'A';
+    switch (cuisine) {
+        case 'Meat':
+        case 'Hamburgers':
+            return 'A';
+        case 'Cafe':
+            return 'B';
+        case 'Salads':
+        case 'Salad':
+            return 'D';
+        case 'Asian':
+            return 'I';
+        case 'Italian':
+            return'L';
+        case 'Fish and Chips':
+            return 'K';
+        case 'Ice Cream':
+            return 'X';
+        default:
+            return 'F';
     }
-
-    if(cuisine === 'Cafe') {
-        return 'B';
-    }
-
-    if(cuisine === 'Salads' || cuisine === 'Salad') {
-        return 'D';
-    }
-
-    if(cuisine === 'Asian') {
-        return 'I';
-    }
-
-    if(cuisine === 'Italian') {
-        return 'L';
-    }
-
-    if(cuisine === 'Fish and Chips') {
-        return 'K';
-    }
-
-    if(cuisine === 'Ice Cream') {
-        return 'X';
-    }
-
-    return 'F';
 };
 
 const Restaurant = (props) => (
