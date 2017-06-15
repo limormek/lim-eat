@@ -1,0 +1,89 @@
+.triangle
+{
+  width: 0;
+  height: 0;
+  border-top: 55px solid #CF001C;
+  border-right: 55px solid transparent;
+}
+
+.triangleContent {
+  position: absolute;
+  top: 10px;
+  transform: rotate(-45deg);
+  display: inline-block;
+  font-size: 14px;
+  color: white
+}
+
+.restTitle {
+  position: absolute;
+  top: 7px;
+  left: 50px;
+  display: inline-block;
+  font-size: 14px;
+  color: black;
+  align-content: center;
+}
+
+.restTitleNoTenBis {
+  left: 50px;
+}
+
+.box {
+  position: relative;
+  width: 315px;
+  height: 160px;
+  background: #ffebee;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.rest {
+  margin: 20px;
+  display: inline-block;
+}
+
+.form {
+  float: left;
+  width: 50%;
+}
+
+.sidePhoto {
+  float: right;
+  //background: url('http://i.dailymail.co.uk/i/pix/2016/03/29/07/32A1C33F00000578-3513356-image-m-4_1459231617265.jpg');
+  background: url('https://preview.ibb.co/dtq7na/IMG_20170611_185429_723.jpg');
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  //background-position: 0px -260px;
+}
+
+@font-face {
+  font-family: 'CuisineFont';
+  src: url('fonts/efcuisines-regular-webfont.ttf');
+  font-weight: bold;
+}
+
+.cuisine {
+ font-family: CuisineFont, "Gill Sans";
+  color: #CF001C;
+  font-size: 18px;
+}
+
+.form-title {
+  margin-bottom: 30px;
+}
+
+.submit {
+  background-color: #26a69a;
+  cursor: pointer !important;
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  border: none;
+  box-shadow: 2px 1px 1px #888888;
+  font-size: 16px;
+}
+

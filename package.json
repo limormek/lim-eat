@@ -5,6 +5,6 @@
   "name": "we-eat",
   "private": true,
   "dependencies": {
-    "react-star-rating-component": "^1.2.4"
+    "extract-text-webpack-plugin": "^2.1.2"
   }
 }

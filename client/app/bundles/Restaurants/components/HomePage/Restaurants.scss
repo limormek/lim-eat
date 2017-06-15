@@ -5,6 +5,7 @@
 .restaurants {
   table {
     border-collapse: collapse;
+    background-color: #ff0000;
   }
 
   table tr td {
@@ -35,9 +36,10 @@
     }
   }
 
-  .center {
+  &__center {
     margin: auto;
     width: 15%;
+    background-color: red;
     padding: 10px;
   }
 

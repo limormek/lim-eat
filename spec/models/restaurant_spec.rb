@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: Restaurants
+# Table name: restaurants
 #
 #  id         :integer          not null, primary key
 #  name       :string
@@ -11,7 +11,9 @@
 #  max_time   :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
-#  kosher     :boolean
+#  kosher     :boolean          not null
+#  lat        :decimal(9, 6)
+#  lng        :decimal(9, 6)
 #
 
 require 'rails_helper'

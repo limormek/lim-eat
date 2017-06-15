@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  get 'hello_world', to: 'hello_world#index'
-  resources :restaurants
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :restaurants, only: [:index, :create, :show]
+
+  post '/create', to: 'restaurants#create'
+
+  # Make every request to go to restaurants#index
+  get '(*path)', to: 'restaurants#index'
+
 end
