@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   post '/create', to: 'restaurants#create'
 
+  # Make every request to go to restaurants#index
   get '(*path)', to: 'restaurants#index'
 
 end

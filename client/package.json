@@ -7,7 +7,7 @@
     "build:development": "NODE_ENV=development webpack -w --config webpack.config.js"
   },
   "cacheDirectories": [
-    "node_modules",
+    "_modules",
     "client/node_modules"
   ],
   "dependencies": {

@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'react_on_rails', '~>8.0.0'
+gem 'react_on_rails', '8.0.2'
 
 gem 'active_model_serializers', '~> 0.10.0'
 
@@ -80,3 +80,10 @@ gem 'webpacker_lite'
 source 'https://rails-assets.org' do
   gem 'rails-assets-es6-promise-polyfill'
 end
+
+group :production, :staging do
+  gem 'rails_12factor'
+end
+
+#keep this value synced with ruby version
+ruby '2.3.1'
